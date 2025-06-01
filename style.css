@@ -1,0 +1,88 @@
+/* ===== THEME COLOR VARIABLES ===== */
+:root {
+  --bg: #ffffff;       /* Light mode background */
+  --text: #000000;     /* Light mode text color */
+  --card: #f0f0f0;     /* Light mode card background */
+}
+
+/* Dark mode overrides when [data-theme="dark"] is active on <html> */
+[data-theme="dark"] {
+  --bg: #1a1a1a;       /* Dark background */
+  --text: #ffffff;     /* Light text */
+  --card: #2a2a2a;     /* Dark card background */
+}
+/* ===== GLOBAL BASE STYLES ===== */
+body {
+  margin: 0;
+  font-family: sans-serif;      /* You can customize this later */
+  background: var(--bg);        /* Theme-sensitive background */
+  color: var(--text);           /* Theme-sensitive text */
+  transition: background 0.3s, color 0.3s; /* Smooth transition on theme toggle */
+}
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between; /* Push title to left, button to right */
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--card);        /* Match current theme */
+}
+/* ===== TOGGLE THEME BUTTON ===== */
+.toggle-theme {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--card);  /* Theme card color */
+  border: 1px solid var(--text);  /* Contrast border */
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background 0.2s ease, color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soft drop shadow */
+}
+
+/* Hover effect: invert colors */
+.toggle-theme:hover {
+  background-color: var(--text);
+  color: var(--bg);
+}
+/* ===== TITLES ===== */
+h1, h2 {
+  margin: 0.5rem 0;
+}
+/* ===== SECTION WRAPPERS ===== */
+.section {
+  padding: 2rem;
+}
+/* ===== CARD GRID LAYOUT ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+/* ===== INDIVIDUAL PROJECT CARDS ===== */
+.card {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none; /* Remove link underline */
+  color: var(--text);     /* Match current theme */
+}
+
+/* Hover animation: float effect and shadow */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* ===== PROJECT ICON IMAGES ===== */
+.card img {
+  max-width: 100%;          /* Responsive image sizing */
+  height: 64px;             /* Consistent height for icons */
+  object-fit: contain;      /* Keep image proportional */
+  margin-bottom: 0.5rem;    /* Space between image and text */
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Main Page</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== Header Section ====== -->
+  <header>
+    <!-- Website title -->
+    <h1>Main Page</h1>
+
+    <!-- Button to toggle between dark/light theme -->
+    <!-- The moon/sun emoji is part of the button for visual flair -->
+    <button class="toggle-theme" onclick="toggleTheme()">
+      🌗 Toggle Theme
+    </button>
+  </header>
+
+  <!-- ====== Games Section (Currently Placeholder) ====== -->
+  <div class="section">
+    <h2>Games</h2>
+
+    <!-- Grid layout for icons/cards -->
+    <div class="grid">
+      <!-- Placeholder card; you can add real games here later -->
+      <div class="card">🎮 Coming Soon</div>
+    </div>
+  </div>
+
+  <!-- ====== Educational Section ====== -->
+  <div class="section">
+    <h2>Educational</h2>
+
+    <div class="grid">
+      <!-- Card for 'Build a Battle' -->
+      <!-- Links to your external project (open in new tab) -->
+      <a class="card" href="https://krealer.github.io/build-a-battle/" target="_blank">
+        <!-- Icon image for the project -->
+        <img src="assets/icons/build-a-battle.png" alt="Build a Battle" />
+        <div>Build a Battle</div>
+      </a>
+
+      <!-- Card for 'Falling Words' -->
+      <a class="card" href="https://krealer.github.io/falling-words/" target="_blank">
+        <img src="assets/icons/falling-words.png" alt="Falling Words" />
+        <div>Falling Words</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ====== Link to JavaScript functionality ====== -->
+  <script src="script.js"></script>
+</body>
+</html>
