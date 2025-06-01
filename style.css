@@ -1,88 +1,87 @@
-/* ===== THEME COLOR VARIABLES ===== */
+/* ======= COLOR THEMES ======= */
+/* Define default (light mode) color variables */
 :root {
-  --bg: #ffffff;       /* Light mode background */
-  --text: #000000;     /* Light mode text color */
-  --card: #f0f0f0;     /* Light mode card background */
+  --bg: #ffffff;        /* Page background */
+  --text: #000000;      /* Main text color */
+  --card: #f0f0f0;      /* Card background color */
 }
 
-/* Dark mode overrides when [data-theme="dark"] is active on <html> */
+/* Override variables for dark mode when data-theme="dark" is on the <html> */
 [data-theme="dark"] {
-  --bg: #1a1a1a;       /* Dark background */
-  --text: #ffffff;     /* Light text */
-  --card: #2a2a2a;     /* Dark card background */
+  --bg: #1a1a1a;
+  --text: #ffffff;
+  --card: #2a2a2a;
 }
-/* ===== GLOBAL BASE STYLES ===== */
+/* ======= GLOBAL RESET ======= */
 body {
   margin: 0;
-  font-family: sans-serif;      /* You can customize this later */
-  background: var(--bg);        /* Theme-sensitive background */
-  color: var(--text);           /* Theme-sensitive text */
-  transition: background 0.3s, color 0.3s; /* Smooth transition on theme toggle */
+  font-family: sans-serif;  /* You can update this later with a Google Font */
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s; /* Smooth theme transitions */
 }
-/* ===== HEADER ===== */
+/* ======= HEADER STYLING ======= */
 header {
   display: flex;
-  justify-content: space-between; /* Push title to left, button to right */
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: var(--card);        /* Match current theme */
+  background: var(--card); /* Theme-based card color */
 }
-/* ===== TOGGLE THEME BUTTON ===== */
+/* ======= THEME TOGGLE BUTTON ======= */
 .toggle-theme {
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: var(--card);  /* Theme card color */
-  border: 1px solid var(--text);  /* Contrast border */
+  background-color: var(--card);
+  border: 1px solid var(--text);
   color: var(--text);
   padding: 0.5rem 1rem;
   border-radius: 12px;
   font-weight: bold;
   transition: background 0.2s ease, color 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soft drop shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
 }
 
-/* Hover effect: invert colors */
 .toggle-theme:hover {
-  background-color: var(--text);
-  color: var(--bg);
+  background-color: var(--text);  /* Invert background */
+  color: var(--bg);               /* Invert text */
 }
-/* ===== TITLES ===== */
-h1, h2 {
-  margin: 0.5rem 0;
-}
-/* ===== SECTION WRAPPERS ===== */
+/* ======= SECTION WRAPPERS ======= */
 .section {
   padding: 2rem;
 }
-/* ===== CARD GRID LAYOUT ===== */
+/* ======= SECTION HEADINGS ======= */
+h1, h2 {
+  margin: 0.5rem 0;
+}
+/* ======= CARD GRID CONTAINER ======= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
-/* ===== INDIVIDUAL PROJECT CARDS ===== */
+/* ======= INDIVIDUAL PROJECT CARDS ======= */
 .card {
   background: var(--card);
   padding: 1rem;
   border-radius: 12px;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-decoration: none; /* Remove link underline */
-  color: var(--text);     /* Match current theme */
+  text-decoration: none;  /* Removes underline on <a> tags */
+  color: var(--text);      /* Text adapts to theme */
 }
 
-/* Hover animation: float effect and shadow */
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);  /* Float effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Elevation on hover */
 }
-/* ===== PROJECT ICON IMAGES ===== */
+/* ======= CARD IMAGES ======= */
 .card img {
-  max-width: 100%;          /* Responsive image sizing */
-  height: 64px;             /* Consistent height for icons */
-  object-fit: contain;      /* Keep image proportional */
-  margin-bottom: 0.5rem;    /* Space between image and text */
+  max-width: 100%;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
 }
