@@ -9,6 +9,11 @@
       "title": "APOCOLOCO",
       "icon": "assets/icons/apocoloco.png",
       "link": "https://krealer.github.io/apocoloco/"
+    },
+    {
+      "title": "Auravell Bloom",
+      "icon": "assets/icons/auravell-bloom.png",
+      "link": "https://krealer.github.io/auravell-bloom/"
     }
   ],
   "educational": [
