@@ -5,40 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Main Page</title>
 
-  <!-- Link to your stylesheet -->
+  <!-- Link to CSS for layout, colors, themes -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon for browser tab -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
   <!-- ===== HEADER SECTION ===== -->
-  <header>
-    <!-- Website title -->
-    <h1>Main Page</h1>
+<header>
+  <h1>Main Page</h1>
 
-    <!-- Theme toggle button (calls JavaScript function) -->
+  <!-- Button Group: Theme + Music -->
+  <div class="header-buttons">
+    <!-- Theme Toggle Button -->
     <button class="toggle-theme" onclick="toggleTheme()">
       🌗 Toggle Theme
     </button>
-  </header>
+
+    <!-- Music Toggle Button -->
+    <button class="toggle-music" onclick="toggleMusic()">
+      🎵 Toggle Music
+    </button>
+  </div>
+</header>
+
 
   <!-- ===== GAMES SECTION ===== -->
   <div class="section" id="games">
     <h2>Games</h2>
-
-    <!-- Grid will be filled dynamically via JS -->
+    <!-- Content dynamically loaded via script.js -->
     <div class="grid">Loading...</div>
   </div>
 
   <!-- ===== EDUCATIONAL SECTION ===== -->
   <div class="section" id="educational">
     <h2>Educational</h2>
-
-    <!-- Grid will be filled dynamically via JS -->
+    <!-- Content dynamically loaded via script.js -->
     <div class="grid">Loading...</div>
   </div>
 
-  <!-- Link to JavaScript file at the end of the body -->
+  <!-- ===== BACKGROUND MUSIC ELEMENT ===== -->
+  <!-- Hidden, looping audio that starts after first user interaction -->
+  <audio id="bgm" autoplay loop hidden>
+    <source src="assets/audio/bgm.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- ===== JAVASCRIPT LOGIC ===== -->
   <script src="script.js"></script>
 </body>
 </html>

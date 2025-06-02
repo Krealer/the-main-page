@@ -85,3 +85,29 @@ h1, h2 {
   object-fit: contain;
   margin-bottom: 0.5rem;
 }
+/* ===== Header Button Group Styling ===== */
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Music toggle button uses same style as theme toggle */
+.toggle-music {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--card);
+  border: 1px solid var(--text);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background 0.2s ease, color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-music:hover {
+  background-color: var(--text);
+  color: var(--bg);
+}
