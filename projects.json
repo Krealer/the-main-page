@@ -36,6 +36,11 @@
       "title": "Build a Battle",
       "icon": "assets/icons/build-a-battle.png",
       "link": "https://krealer.github.io/build-a-battle/"
+    },
+    {
+      "title": "Build a GridGame",
+      "icon": "assets/icons/build-a-gridgame.png",
+      "link": "https://krealer.github.io/build-a-gridgame/"
     }
   ]
 }
