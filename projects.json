@@ -14,6 +14,16 @@
       "title": "Auravell Bloom",
       "icon": "assets/icons/auravell-bloom.png",
       "link": "https://krealer.github.io/auravell-bloom/"
+    },
+    {
+      "title": "Falling Words",
+      "icon": "assets/icons/falling-words.png",
+      "link": "https://krealer.github.io/falling-words/"
+    },
+    {
+      "title": "MindMate",
+      "icon": "assets/icons/mindmate.png",
+      "link": "https://krealer.github.io/mindmate/"
     }
   ],
   "educational": [
@@ -21,11 +31,6 @@
       "title": "Build a Battle",
       "icon": "assets/icons/build-a-battle.png",
       "link": "https://krealer.github.io/build-a-battle/"
-    },
-    {
-      "title": "Falling Words",
-      "icon": "assets/icons/falling-words.png",
-      "link": "https://krealer.github.io/falling-words/"
     }
   ]
 }
