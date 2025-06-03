@@ -24,6 +24,11 @@
       "title": "MindMate",
       "icon": "assets/icons/mindmate.png",
       "link": "https://krealer.github.io/mindmate/"
+    },
+    {
+      "title": "Grid Game",
+      "icon": "assets/icons/grid-game.png",
+      "link": "https://krealer.github.io/grid-game/"
     }
   ],
   "educational": [
