@@ -34,6 +34,11 @@
       "title": "PsychGrid",
       "icon": "assets/icons/psychgrid.svg",
       "link": "https://krealer.github.io/psychgrid/"
+    },
+    {
+      "title": "Grid Quest",
+      "icon": "assets/icons/grid-quest.svg",
+      "link": "https://krealer.github.io/grid-quest/"
     }
   ],
   "educational": [
