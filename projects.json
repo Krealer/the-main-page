@@ -16,11 +16,6 @@
       "link": "https://krealer.github.io/auravell-bloom/"
     },
     {
-      "title": "Falling Words",
-      "icon": "assets/icons/falling-words.png",
-      "link": "https://krealer.github.io/falling-words/"
-    },
-    {
       "title": "MindMate",
       "icon": "assets/icons/mindmate.png",
       "link": "https://krealer.github.io/mindmate/"
@@ -51,6 +46,16 @@
       "title": "Build a GridGame",
       "icon": "assets/icons/build-a-gridgame.png",
       "link": "https://krealer.github.io/build-a-gridgame/"
+    },
+    {
+      "title": "Falling Words",
+      "icon": "assets/icons/falling-words.png",
+      "link": "https://krealer.github.io/falling-words/"
+    },
+    {
+      "title": "Visual Calculator",
+      "icon": "assets/icons/visual-calculator.svg",
+      "link": "https://krealer.github.io/visual-calculator/"
     }
   ]
 }
