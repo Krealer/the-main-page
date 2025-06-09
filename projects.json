@@ -34,6 +34,11 @@
       "title": "Grid Quest",
       "icon": "assets/icons/grid-quest.svg",
       "link": "https://krealer.github.io/grid-quest/"
+    },
+    {
+      "title": "Urafisan",
+      "icon": "assets/icons/urafisan.png",
+      "link": "https://krealer.github.io/urafisan/"
     }
   ],
   "educational": [
