@@ -66,6 +66,11 @@
       "title": "Visual Calculator",
       "icon": "assets/icons/visual-calculator.svg",
       "link": "https://krealer.github.io/visual-calculator/"
+    },
+    {
+      "title": "Mirror Maze",
+      "icon": "assets/icons/mirror-maze.svg",
+      "link": "https://krealer.github.io/mirror-maze/"
     }
   ]
 }
