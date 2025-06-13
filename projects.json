@@ -71,6 +71,11 @@
       "title": "EmoQuest",
       "icon": "assets/icons/emoquest.svg",
       "link": "https://krealer.github.io/emoquest/"
+    },
+    {
+      "title": "Praeverse",
+      "icon": "assets/icons/praeverse.svg",
+      "link": "https://praeverse-krealers-projects.vercel.app/"
     }
   ]
 }
